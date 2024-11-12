@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Portfolio</title>
+
+        <!-- Link to CSS file -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Link to JavaScript file -->
+        <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+        <h1>Rajdeep's Portfolio</h1>
+
+        <!-- Basic Details Form -->
+        <form id="portfolio-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="Rajdeep Singh" readonly>
+
+                <label for="reg-number">Register Number:</label>
+                <input type="text" id="reg-number" value="RA2311003012260" readonly>
+
+                <label for="email">Mail ID:</label>
+                <input type="email" id="email" value="rs2107@srmist.edu.in" readonly>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" value="COMPUTING TECHNOLOGIES" readonly>
+
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" value="III" readonly>
+
+                <label for="subject">Subject Title:</label>
+                <input type="text" id="subject" value="21CSC201J Data Structures and Algorithms" readonly>
+
+                <label for="handled-by">Handled By:</label>
+                <input type="text" id="handled-by" value="Dr. K.Alice" readonly>
+
+                <!-- Introduction Paragraph -->
+                <p class="intro">
+                        I'm a second-year student at SRM, pursuing a B.Tech in Computer Science. Below, I will be sharing my achievements, certificates, and other accomplishments.
+                </p>
+
+                <!-- Achievements Section -->
+                <h2>Achievements</h2>
+
+                <!-- HackerRank Section -->
+                <div class="achievement-section" onclick="toggleImageVisibility('hackerrank')">
+                        <h3>HackerRank Achievements:</h3>
+                        <div id="hackerrank" class="achievement-images" style="display: none;">
+                                <img src="Screenshot 2024-11-12 194039.png" alt="HackerRank Achievements">
+                        </div>
+                </div>
+
+                <!-- ELab and Lab Completion Status -->
+                <div class="achievement-section" onclick="toggleImageVisibility('elab')">
+                        <h3>ELab Completion Status:</h3>
+                        <div id="elab" class="achievement-images" style="display: none;">
+                                <img src="Screenshot 2024-11-12 194207.png" alt="ELab Completion Status">
+                        </div>
+                </div>
+
+                <div class="achievement-section" onclick="toggleImageVisibility('lab')">
+                        <h3>Lab Completion Status:</h3>
+                        <div id="lab" class="achievement-images" style="display: none;">
+                                <img src="60d76178-b89a-408b-b491-3621f77837a7.jpg" alt="Lab Completion Status">
+                        </div>
+                </div>
+
+                <!-- Add-On Course Questions Solved -->
+                <div class="achievement-section" onclick="toggleImageVisibility('addon')">
+                        <h3>Add-On Course Questions Solved:</h3>
+                        <div id="addon" class="achievement-images" style="display: none;">
+                                <img src="Screenshot 2024-11-11 232523.png" alt="Add-On Course Questions Solved">
+                                <img src="Screenshot 2024-11-11 232552.png" alt="Add-On Course Questions Solved">
+                                <img src="Screenshot 2024-11-11 232616.png" alt="Add-On Course Questions Solved">
+                                <img src="Screenshot 2024-11-11 232638.png" alt="Add-On Course Questions Solved">
+                                <img src="Screenshot 2024-11-11 232705.png" alt="Add-On Course Questions Solved">
+                        </div>
+                </div>
+                <div class="achievement-section" onclick="toggleImageVisibility('projects-done')">
+                        <h3>Projects Done:</h3>
+                        <div id="projects-done" class="achievement-images" style="display: none;">
+                                <h4>EcoTrack-carbon footprint calculator</h4>
+                                <img src="77993139-cff8-44ca-855a-6a2623703ada.jpg" alt="Projects Done">
+                                <h4>Hospital Management System</h4>
+                                <img src="Screenshot 2024-11-12 235630.png" alt="Projects Done">
+                        </div>
+                </div>
+                <!-- Coding Contest -->
+                <div class="achievement-section" onclick="toggleImageVisibility('coding-contest')">
+                        <h3>Coding Contest:</h3>
+                        <div id="coding-contest" class="achievement-images" style="display: none;">
+                                <img src="tuxpi.com.1731423297.jpg" alt="Coding Contest">
+                                <img src="Screenshot 2024-11-12 201614.png" alt="Coding Contest">
+                        </div>
+                </div>
+
+                <!-- Other Certificates -->
+                <div class="achievement-section" onclick="toggleImageVisibility('other-certificates')">
+                        <h3>Other Certificates:</h3>
+                        <div id="other-certificates" class="achievement-images" style="display: none;">
+                                <img src="4d1e7caa-1955-4c66-84e0-57baf2c90b7c.jpg" alt="Other Certificates">
+                                <img src="Screenshot 2024-11-12 203457.png" alt="Other Certificates">
+                                <img src="Screenshot 2024-11-12 203540.png" alt="Other Certificates">
+                                <img src="d599ca8e-cbf2-4cc1-8585-eb7e6046cfef.jpg" alt="Other Certificates">
+                        </div>
+                </div>
+        </form>
+</div>
+</body>
+</html>

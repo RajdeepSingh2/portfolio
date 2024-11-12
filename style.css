@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background */
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4; /* Light text color for contrast */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #262626; /* Dark grey background for the container */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #FFD700; /* Gold color for the heading */
+}
+
+.intro {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #f4f4f4; /* White text for intro */
+}
+
+/* Section Heading */
+h2 {
+    margin-top: 30px;
+    font-size: 1.8em;
+    color: #FFD700; /* Gold color for section headings */
+}
+
+/* Basic Form Inputs */
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #FFD700; /* Gold color for labels */
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #FFD700; /* Gold border for inputs */
+    border-radius: 5px;
+    background-color: #333; /* Dark background for inputs */
+    color: #f4f4f4; /* White text inside inputs */
+}
+
+input[readonly] {
+    background-color: #444; /* Slightly lighter dark background for readonly inputs */
+}
+
+/* Achievement Section */
+.achievement-section {
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #3a3a3a; /* Dark background for sections */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 1px solid #FFD700; /* Gold border for sections */
+}
+
+.achievement-section:hover {
+    background-color: #575757; /* Slightly lighter background on hover */
+    transform: scale(1.05);
+}
+
+/* Image Styles */
+img {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation Styles */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
